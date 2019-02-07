@@ -8,7 +8,7 @@ function twentynineteen_child_assets() {
 		return;
 	}
 	wp_enqueue_style( 'twentynineteen-child-style', get_stylesheet_directory_uri() . '/style.css' );
-	wp_enqueue_script( 'twentynineteen-script-name', get_stylesheet_directory_uri() . '/react-infinite-scroll/dist/main.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'twentynineteen-script-name', get_stylesheet_directory_uri() . '/assets/js/dist/bundle.js', array(), '1.0.0', true );
 
 }
 
