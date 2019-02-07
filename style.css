@@ -1,0 +1,24 @@
+/*
+ Theme Name:   Twenty Nineteen Child
+ Theme URI:    http://wptravel.io/themes
+ Description:  Child Theme Twenty Nineteen
+ Author:       WP Travel
+ Author URI:   http://wptravel.io/
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentynineteen-child
+*/
+
+.loader {
+	text-align: center;
+    background: url(assets/images/loader.gif);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    font-size: 0px;
+    background-size: 70px;
+    margin: 0 auto;
+}
