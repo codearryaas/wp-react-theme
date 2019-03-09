@@ -3,15 +3,20 @@ import InfiniteScroll from 'react-infinite-scroller';
 import Post from './Post';
 
 export default class App extends Component {
-  state = {
-    posts: [],
-    hasMoreData: true
-  };
-  loadMorePosts = page => {
+  constructor(props) {
+    super(props)
+    this.state = {
+      posts: [],
+      hasMoreData: true
+    };
+  }
+
+  loadMorePosts = (page) => {
     fetch(`https://wptravel.io/wp-json/wp/v2/posts?page=${page}`)
       .then(response => response.json())
       .then(data => {
         this.setState({ posts: [...this.state.posts, ...data] });
+
       })
       .catch(error => {
         console.error(error);
@@ -21,6 +26,7 @@ export default class App extends Component {
 
   render() {
     const { posts, hasMoreData } = this.state;
+
     return (
       <InfiniteScroll
         pageStart={0}
