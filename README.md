@@ -39,4 +39,10 @@ This theme is demo for [WordCamp Kathmandu 2019](https://2019.kathmandu.wordcamp
 - Next step is to add more code in `functions.php` as [shown here](https://gist.github.com/codearryaas/cf5b7d7a039953770651275481a5bcfc). This would add some more data in API.
 
 **B) React Part**
-- (instructions here)
+- Go to `assets/js/src` folder this is the location where we have kept the react code.
+-  `index.js` is the entry point of the application whereas `App.js` and `Post.js` are the two react components.
+- Inside `assets/js/dist` we have the production build generated using webpack, webpack bundles all the necessary files and dependency needed to run react application into a single file called `bundle.js`.
+- Configuration for webpack `webpack.config.js` is at root of the application.
+- You can also see folder called `node_modules`, `node_modules` contains all the dependency for the application managed by `npm`.
+- `npm` is a tool that is used to maintain and download dependency required for the aplication.
+- `npm` looks at file called `package.json` which is located at the root of the application to maintain and download the dependency.
